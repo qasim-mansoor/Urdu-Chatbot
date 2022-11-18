@@ -1,0 +1,121 @@
+version: "3.1"
+
+stories:
+
+- story: Happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Happy path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Happy path 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Happy path 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Happy path 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Happy path 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: query_knowledge_base
+  - action: action_query_database
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Query Knowledge Base
+  steps:
+  - intent: query_knowledge_base
+  - action: action_query_database
+
+- story: Bye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
